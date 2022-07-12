@@ -199,6 +199,8 @@ def raw_data(df):
     """Displays some raw data on bikeshare users based on user response."""
     # track the amount of times the user asked for more data
     x = 0
+    # enable pandas to display all the columns in the dataframe when printing
+    pd.set_option('display.max_columns', 200)
     while True:
         ask_user = input(
             "Enter Y to access some raw data on bikeshare users, enter any other key to skip.\n".format(city.title()))
@@ -216,10 +218,15 @@ def main():
         df = load_data(city, month, day)
 
         time_stats(df)
+        input("Press Enter to continue...")
         station_stats(df)
+        input("Press Enter to continue...")
         trip_duration_stats(df)
+        input("Press Enter to continue...")
         if city == "chicago" or city == "new york city":
             user_stats(df)
+        else:
+            print("Note: User data not available for Washington.")
         raw_data(df)
 
         restart = input('\nEnd of Program. Enter Y to restart, enter any other key to quit.\n')
