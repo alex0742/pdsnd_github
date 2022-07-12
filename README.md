@@ -18,9 +18,9 @@ The project allows the user to access the bikeshare data of three different citi
        ask user if they want access to raw data
 2. [stackoverflow-60339049](https://stackoverflow.com/questions/60339049/weekday-name-from-a-pandas-dataframe-date-object)
        use day_name() to get the day of week
-4. [stackoverflow-53025207](https://stackoverflow.com/questions/53025207/how-do-i-remove-name-and-dtype-from-pandas-output)
+3. [stackoverflow-53025207](https://stackoverflow.com/questions/53025207/how-do-i-remove-name-and-dtype-from-pandas-output)
        remove name and dtype by using to.string()
-5. [stackoverflow-38733477](https://stackoverflow.com/questions/38733477/whats-the-best-way-to-sum-all-values-in-a-pandas-dataframe)
+4. [stackoverflow-38733477](https://stackoverflow.com/questions/38733477/whats-the-best-way-to-sum-all-values-in-a-pandas-dataframe)
        sum values in dataframe
-6. [udacity knowledge-728649](https://knowledge.udacity.com/questions/728649)
+5. [udacity knowledge-728649](https://knowledge.udacity.com/questions/728649)
        use groupby to combine two columns
