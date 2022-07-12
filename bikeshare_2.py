@@ -218,8 +218,11 @@ def main():
         df = load_data(city, month, day)
 
         time_stats(df)
+        input("Press Enter to continue...")
         station_stats(df)
+        input("Press Enter to continue...")
         trip_duration_stats(df)
+        input("Press Enter to continue...")
         if city == "chicago" or city == "new york city":
             user_stats(df)
         else:
