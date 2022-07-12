@@ -220,6 +220,8 @@ def main():
         trip_duration_stats(df)
         if city == "chicago" or city == "new york city":
             user_stats(df)
+        else:
+            print("Note: User data not available for Washington.")
         raw_data(df)
 
         restart = input('\nEnd of Program. Enter Y to restart, enter any other key to quit.\n')
